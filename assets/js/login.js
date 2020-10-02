@@ -54,7 +54,7 @@ $(function () {
         }
         layer.msg('注册成功, 请登录!');
         // 自动触发 点击事件 
-        console.log(0);
+
         $('#link_login').click();
       }
     })
@@ -78,7 +78,7 @@ $(function () {
         // 跳转到后台主页`  token  值的作用是 权限
         // jiang将登录成功得到的token字符串存储到本地存储
         localStorage.setItem('token', res.token)
-        location.href = "/code/index.html"
+        location.href = "../../index.html"
       }
     })
   });
